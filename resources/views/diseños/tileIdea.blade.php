@@ -22,12 +22,7 @@
             </p>
         </div>
         
-        {{-- <div class="flex justify-between items-center mt-4">
-            <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Read more</a>
-
-            <div class="flex items-center">
-                <img class="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block" src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=40&q=80" alt="avatar">
-                <a class="text-gray-700 dark:text-gray-200 font-bold cursor-pointer">Khatab wedaa</a>
-            </div>
-        </div> --}}
+        <div class="flex justify-end">
+            <a class="text-gray-700 dark:text-gray-200 font-bold cursor-pointer">{{$nombre}}</a>
+        </div>
     </div>

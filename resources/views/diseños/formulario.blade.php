@@ -11,10 +11,10 @@
 
 
        
-        @error('nombre')<p><strong>-Rellena el campo Nombre</strong>@enderror
-        @error('correo')<p><strong>-Rellena con un correo valido</strong></p>@enderror
-        @error('tag')<p><strong>-Escribe una etiqueta</strong></p>@enderror
-        @error('idea')<p><strong>-Te falto ingresar la idea</strong></p>@enderror
+        @error('nombre')<p class="text-red-600"><strong>-Rellena el campo Nombre</strong>@enderror
+        @error('correo')<p class="text-red-600"><strong>-Rellena con un correo valido</strong></p>@enderror
+        @error('tag')<p class="text-red-600"><strong>-Escribe una etiqueta</strong></p>@enderror
+        @error('idea')<p class="text-red-600"><strong>-Te falto ingresar la idea</strong></p>@enderror
         
        
 

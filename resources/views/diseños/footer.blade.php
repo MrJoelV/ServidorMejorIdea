@@ -1,13 +1,7 @@
-<style>
-  .content {
-    width:100%;
-    /* height: 300px; */
-  }
-  
-  .footer {
-    width: 100%;
-    background-color: #f00;
-  }
+  <style>
+ 
+
+
   </style>
 
 

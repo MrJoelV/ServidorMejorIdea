@@ -5,13 +5,10 @@
 @section("content")
 {{-- dasdasdasdasd --}}
     <div class="container bg-center mx-auto ">
-        <div class="grid grid-cols-2 gap-4 p-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10">
 
 
-           <div class="row-span-3 col-start-2 row-start-1">
-            @include('diseños.formulario')
-           </div>
-
+ 
            <div>
             @foreach ($posts as $item)
             {{-- {{$item->idea}} --}}
@@ -20,12 +17,18 @@
                      {{$tag}}
                  @endforeach --}}
             @include('diseños.tileIdea', [
+                'nombre' => $item->nombre,
                 'cuerpoTile' => $item->idea,
                 'tags' => $item->tagsRelacion,
                 'fecha' => $item->created_at
                 ])  
             @endforeach
            </div>
+
+           <div class="row-span-3 lg:col-start-2 lg:row-start-1">
+            @include('diseños.formulario')
+           </div>
+
 
 
 

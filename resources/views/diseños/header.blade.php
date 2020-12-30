@@ -9,13 +9,13 @@
 
 <header>
     <head>
-        <nav class="bg-white dark:bg-gray-800 shadow">
+        <nav class="bg-green-600 dark:bg-gray-800 shadow">
             <div class="container mx-auto px-6 py-3">
                 <div class="flex flex-col md:flex-row md:justify-between md:items-center">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center">
                             <img class="w-12 h-12 mr-5" src="{{ asset('images/icono.png') }}" alt="">
-                            <a class="text-gray-800 dark:text-white text-xl font-bold md:text-2xl hover:text-gray-700 dark:hover:text-gray-300" href="{{route("pg.index")}}">Tu mejor Idea</a>
+                            <a class="text-white dark:text-white text-xl font-bold md:text-2xl hover:text-white-700 dark:hover:text-gray-300" href="{{route("pg.index")}}">Tu mejor Idea</a>
     
                             <!-- Search input on desktop screen -->
                             <div class="mx-10 hidden md:block">
@@ -24,19 +24,19 @@
                         </div>
     
                         <!-- Mobile menu button -->
-                        <div class="flex md:hidden">
+                        {{-- <div class="flex md:hidden">
                             <button type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
                                 <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
                                     <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
                                 </svg>
                             </button>
-                        </div>
+                        </div> --}}
                     </div>
     
                     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                     <div class="hidden md:flex items-center">
                         <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-                            <a class="my-1 text-sm text-gray-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Home</a>
+                            <a class="my-1 text-sm text-white-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Home</a>
                             {{-- <a class="my-1 text-sm text-gray-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Blog</a>
                             <a class="my-1 text-sm text-gray-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Compoents</a>
                             <a class="my-1 text-sm text-gray-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Courses</a> --}}
@@ -44,7 +44,7 @@
     
                         <div class="flex items-center py-2 -mx-1 md:mx-0">
                             {{-- <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-gray-500 font-medium text-white leading-5 hover:bg-blue-600 md:mx-2 md:w-auto" href="#">Login</a> --}}
-                            <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-blue-500 font-medium text-white leading-5 hover:bg-blue-600 md:mx-0 md:w-auto" href="#">Ingresar</a>
+                            <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-green-800 font-medium text-white leading-5 hover:bg-blue-600 md:mx-0 md:w-auto" href="#">Ingresar</a>
                         </div>
     
                         <!-- Search input on mobile screen -->

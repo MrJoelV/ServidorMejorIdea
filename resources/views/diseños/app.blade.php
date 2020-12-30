@@ -19,6 +19,10 @@
             color: seagreen;
             font-weight: bold;
         }
+       
+  
+
+    
         
     </style>
 </head>
@@ -36,5 +40,7 @@
     @include('diseños.footer')
 
     <!-- script  -->
+
+
 </body>
 </html>
