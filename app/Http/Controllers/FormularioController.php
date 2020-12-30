@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\TestMail;
 use App\Models\Post;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use PhpParser\Node\Stmt\Return_;
 
 class FormularioController extends Controller
@@ -57,6 +59,22 @@ class FormularioController extends Controller
         // return Tag::where("nombre" ,"=","prueba")->get();
         // return $request->tag;
 
+
+
+
+
+       
+        $details = [
+                "data" => $data,
+                "title" => "Titulo de prueba",
+                "body" => "Body de prueba",
+        ];
+    
+            Mail::to($data->correo)->send(new TestMail($details));
+
+            // return "ENVIADO";
+        
+        // return view("correo.correoPrueba");
         return view("subirIdea", compact("data"));
         
         

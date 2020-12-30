@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormularioController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +30,6 @@ Route::post('/gracias',[FormularioController::class,"mandarSolicitud"])->name("c
 Route::get('/gracias', function () {
     return view("subirIdea");
 });
+
+
+Route::get('/sendE',[MailController::class , "sendEmail"]);
