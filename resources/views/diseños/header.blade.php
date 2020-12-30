@@ -14,12 +14,12 @@
                 <div class="flex flex-col md:flex-row md:justify-between md:items-center">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center">
-                            
+                            <img class="w-12 h-12 mr-5" src="{{ asset('images/icono.png') }}" alt="">
                             <a class="text-gray-800 dark:text-white text-xl font-bold md:text-2xl hover:text-gray-700 dark:hover:text-gray-300" href="{{route("pg.index")}}">Tu mejor Idea</a>
     
                             <!-- Search input on desktop screen -->
                             <div class="mx-10 hidden md:block">
-                                <input type="text" class="w-32 lg:w-64 px-4 py-3 leading-tight text-sm text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-900 rounded-md placeholder-gray-500 dark:placeholder-gray-200 border border-transparent focus:outline-none focus:bg-white focus:ring focus:border-blue-400" placeholder="Buscar" aria-label="Buscar">
+                                {{-- <input type="text" class="w-32 lg:w-64 px-4 py-3 leading-tight text-sm text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-900 rounded-md placeholder-gray-500 dark:placeholder-gray-200 border border-transparent focus:outline-none focus:bg-white focus:ring focus:border-blue-400" placeholder="Buscar" aria-label="Buscar"> --}}
                             </div>
                         </div>
     
@@ -49,7 +49,7 @@
     
                         <!-- Search input on mobile screen -->
                         <div class="mt-3 md:hidden">
-                            <input type="text" class="w-full px-4 py-3 leading-tight text-sm text-gray-700 bg-gray-100 rounded-md placeholder-gray-500 focus:outline-none focus:bg-white focus:shadow-outline" placeholder="Buscar" aria-label="Buscar">
+                            {{-- <input type="text" class="w-full px-4 py-3 leading-tight text-sm text-gray-700 bg-gray-100 rounded-md placeholder-gray-500 focus:outline-none focus:bg-white focus:shadow-outline" placeholder="Buscar" aria-label="Buscar"> --}}
                         </div>
                     </div>
                 </div>

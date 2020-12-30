@@ -21,11 +21,15 @@ class FormularioController extends Controller
         $data->correo = $request->correo;
         $data->estado = 2;
 
+
         // return $data;
 
         $data->save();
         // return $data;
         // return redirect().route("pg.index");
+
+        $dataPost = Post::find($data->id);
+        $dataPost->tagsRelacion()->attach([1,2]);   
         return view("subirIdea", compact("data"));
     }
 }
