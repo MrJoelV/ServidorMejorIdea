@@ -28,7 +28,7 @@ Route::post('/gracias',[FormularioController::class,"mandarSolicitud"])->name("c
 
 
 Route::get('/test', function () {
-    return view("correo.correoAgradecimiento");
+    return view("dashboard");
 });
 
 

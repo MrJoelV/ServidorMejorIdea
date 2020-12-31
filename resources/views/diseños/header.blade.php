@@ -44,7 +44,7 @@
     
                         <div class="flex items-center py-2 -mx-1 md:mx-0">
                             {{-- <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-gray-500 font-medium text-white leading-5 hover:bg-blue-600 md:mx-2 md:w-auto" href="#">Login</a> --}}
-                            <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-green-800 font-medium text-white leading-5 hover:bg-blue-600 md:mx-0 md:w-auto" href="#">Ingresar</a>
+                            <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-green-800 font-medium text-white leading-5 hover:bg-blue-600 md:mx-0 md:w-auto" href="{{ route('login') }}">Ingresar</a>
                         </div>
     
                         <!-- Search input on mobile screen -->
