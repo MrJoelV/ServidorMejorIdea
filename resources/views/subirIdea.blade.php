@@ -24,9 +24,11 @@
 
 
     
-    <p class="mx-auto text-center">
-    Asi se mostrara tu aportacion:
-    </p>
+        <div class="mt-10 mb-10">
+            <p class="text-center">
+                Asi se mostrara tu aportacion:
+                </p>
+        </div>
 
                 <div class="mx-10">
                 @include('diseños.tileIdea', [

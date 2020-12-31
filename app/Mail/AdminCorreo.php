@@ -7,12 +7,13 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class TestMail extends Mailable
+class AdminCorreo extends Mailable
 {
     use Queueable, SerializesModels;
 
+
     public $details;
-    public $subject = "Gracias! - Mejor Idea";
+    public $subject = "Nuevo comentario";
     /**
      * Create a new message instance.
      *
@@ -30,6 +31,6 @@ class TestMail extends Mailable
      */
     public function build()
     {
-        return $this->view("correo.correoAgradecimiento");
+        return $this->view('correo.correoAdmin');
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AdminCorreo;
 use App\Mail\TestMail;
 use App\Models\Post;
 use App\Models\Tag;
@@ -65,16 +66,18 @@ class FormularioController extends Controller
 
        
         $details = [
-                "data" => $data,
-                "title" => "Titulo de prueba",
-                "body" => "Body de prueba",
+                "nombre" => $data,
+                "tema" => "Nuevo titulo de prueba",
+                // "body" => "Body de prueba",
         ];
-    
+        
+        // return $details;
             Mail::to($data->correo)->send(new TestMail($details));
+            Mail::to("joel.edu.v@gmail.com")->send(new AdminCorreo($details));
 
             // return "ENVIADO";
-        
-        // return view("correo.correoPrueba");
+
+        //  return view("correo.correoAgradecimiento");
         return view("subirIdea", compact("data"));
         
         
