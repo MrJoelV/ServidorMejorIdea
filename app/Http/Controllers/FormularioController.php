@@ -20,7 +20,7 @@ class FormularioController extends Controller
             "nombre"=>"required",
             "correo"=>"required|email",
             "idea"=>"required",
-            "tag"=>"required",
+            //  "tag"=>"required",
             ]);
 
         ////// CREACION DE POST
@@ -37,8 +37,8 @@ class FormularioController extends Controller
         // return $data;
         // return redirect().route("pg.index");
 
-
-        $busqueda = Tag::where("nombre" ,"=",$request->tag)->take(1)->get();
+        $request->tag = "VxTag";
+        $busqueda = Tag::where("nombre" ,"=","VxTag")->take(1)->get();
         // return $busqueda;
         if($busqueda->isEmpty())
         {
@@ -60,7 +60,7 @@ class FormularioController extends Controller
         // return Tag::where("nombre" ,"=","prueba")->get();
         // return $request->tag;
 
-
+        
 
 
 

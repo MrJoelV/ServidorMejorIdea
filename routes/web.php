@@ -33,3 +33,6 @@ Route::get('/test', function () {
 
 
 Route::get('/sendE',[MailController::class , "sendEmail"]);
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

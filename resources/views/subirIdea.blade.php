@@ -13,7 +13,7 @@
 
 @section("content")
 
-    
+    @csrf
     <div class="content bg-white">
         <div class="pt-5">
             @include('alertas.alerta', [

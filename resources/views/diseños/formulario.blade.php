@@ -31,10 +31,12 @@
           </div>
   
         </div>
-        <div class="relative mb-1">
+
+
+        {{-- <div class="relative mb-1">
           <label class="text-sm text-gray-600">Etiqueta</label>
           <input type="text" name="tag" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-6 transition-colors duration-200 ease-in-out">
-        </div>
+        </div> --}}
   
   
   
