@@ -9,7 +9,7 @@
 
 <header>
     <head>
-        <nav class="bg-green-600 dark:bg-gray-800 shadow">
+        <nav class="bg-blue-400 dark:bg-gray-800 shadow">
             <div class="container mx-auto px-6 py-3">
                 <div class="flex flex-col md:flex-row md:justify-between md:items-center">
                     <div class="flex justify-between items-center">
@@ -36,7 +36,7 @@
                     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                     <div class="hidden md:flex items-center">
                         <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-                            <a class="my-1 text-sm text-white-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Home</a>
+                            {{-- <a class="my-1 text-sm text-white-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Home</a> --}}
                             {{-- <a class="my-1 text-sm text-gray-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Blog</a>
                             <a class="my-1 text-sm text-gray-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Compoents</a>
                             <a class="my-1 text-sm text-gray-700 dark:text-gray-200 leading-5 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="#">Courses</a> --}}
@@ -44,7 +44,7 @@
     
                         <div class="flex items-center py-2 -mx-1 md:mx-0">
                             {{-- <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-gray-500 font-medium text-white leading-5 hover:bg-blue-600 md:mx-2 md:w-auto" href="#">Login</a> --}}
-                            <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-green-800 font-medium text-white leading-5 hover:bg-blue-600 md:mx-0 md:w-auto" href="{{ route('login') }}">Ingresar</a>
+                            <a class="block w-1/2 px-3 py-2 mx-1 rounded text-center text-sm bg-blue-600 font-medium text-white leading-5 hover:bg-blue-600 md:mx-0 md:w-auto" href="{{ route('login') }}">Ingresar</a>
                         </div>
     
                         <!-- Search input on mobile screen -->
